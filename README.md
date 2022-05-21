@@ -15,7 +15,13 @@
 
 而对于线程c和d，  改为 "而对于变量c和d"
 
-### 第七章
+## 第六章
+
+### 58页
+
+https://github.com/hollischuang/In-depth-Understanding-Of-The-Core-Java/issues/2
+
+## 第七章
 
 ### 67页
 
@@ -62,5 +68,34 @@ Map遍历中通过key找value遍历，key和value类型都应为string，即 Int
 
 "相比于非阻塞队列.....而非阻塞队列虽然安全性不如非阻塞队列..."  修改为 "相比于非阻塞队列.....而非阻塞队列虽然安全性不如阻塞队列..." 
 
+https://github.com/hollischuang/In-depth-Understanding-Of-The-Core-Java/issues/1
 
+## 第13章
+
+### 311页
+
+4枚举可解决反序列化会破坏单例模式的问题
+……
+第二段：在 13.4 节中介绍过，……
+应该是：在 13.5 节……
+
+## 第18章
+
+### 388页
+
+最后一段代码的注释中 Data 应该改为 Date
+
+### 399页
+
+顶部第3点
+
+……
+……
+……，而1.1、1.2、1.3 才属于2020年，1.4 周日是下一周的开始，所以第一周应该只有1.1、1.2、1.3这三天
+
+应是：
+
+……，而1.1、1.2、1.3、1.4 才属于2020年，1.5 周日是下一周的开始，所以第一周应该只有1.1、1.2、1.3、1.4这四天
+
+https://github.com/hollischuang/In-depth-Understanding-Of-The-Core-Java/issues/5
 
