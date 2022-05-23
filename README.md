@@ -35,18 +35,28 @@ https://github.com/hollischuang/In-depth-Understanding-Of-The-Core-Java/issues/2
 
 ### 86页
 
-”查看StringUtils.join的源代码....它也是通过StringBuilde实现...  “这里的StringBuilde应该替换为StringBuilder
+1、”查看StringUtils.join的源代码....它也是通过StringBuilde实现...  “这里的StringBuilde应该替换为StringBuilder
+
+2、代码段中的"&gt;" 改为 ">"
 
 
 ### 110页
 
 可以看到，在Class文件的.... Holl、s888这六个常量。其中"s888"为笔误，应该是"is888"
 
+### 111页
+
+"在《深入理解Java虚拟》中"，改为"在《深入理解Java虚拟机》中"
+
 ### 116 
 
 但s2.intern()会从池中取出已有的引用，这就和s2相等了，这里应该是和s1相等了
 
 ## 第九章
+
+### 124页
+
+"以上介绍了异常的声明....6.4节将介绍一些...."  这里的6.4改为9.4
 
 ### 140页
 
@@ -63,6 +73,15 @@ https://github.com/hollischuang/In-depth-Understanding-Of-The-Core-Java/issues/2
 ### 147页
 
 Map遍历中通过key找value遍历，key和value类型都应为string，即 Integer value = map.get(key) 中的Integer需要改为String
+
+
+### 152页
+
+表格中Vector的缺点"不适合查找"修改为"不适合插入、删除"
+
+### 156页
+
+代码段中System.out.ptintln("subList.set(3,666)得到List : ") 改为 System.out.ptintln("subList.set(1,666)得到List : ")
 
 ### 233页
 
