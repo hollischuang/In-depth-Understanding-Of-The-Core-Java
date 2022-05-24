@@ -37,7 +37,7 @@ https://github.com/hollischuang/In-depth-Understanding-Of-The-Core-Java/issues/2
 
 1、”查看StringUtils.join的源代码....它也是通过StringBuilde实现...  “这里的StringBuilde应该替换为StringBuilder
 
-2、代码段中的"&gt;" 改为 ">"
+2、代码段中的`&gt;` 改为 ">"
 
 
 ### 110页
