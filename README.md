@@ -62,6 +62,9 @@ https://github.com/hollischuang/In-depth-Understanding-Of-The-Core-Java/issues/2
 
 以上代码的输出结果为3，这里应该改为'以上代码的输出结果为2'
 
+
+## 第十章
+
 ### 142页
 
 图10-1 ，interface和class的颜色标反了
@@ -81,7 +84,7 @@ Map遍历中通过key找value遍历，key和value类型都应为string，即 Int
 
 ### 156页
 
-代码段中System.out.ptintln("subList.set(3,666)得到List : ") 改为 System.out.ptintln("subList.set(1,666)得到List : ")
+代码段中System.out.println("subList.set(3,666)得到List : ") 改为 System.out.println("subList.set(1,666)得到List : ")
 
 ### 233页
 
