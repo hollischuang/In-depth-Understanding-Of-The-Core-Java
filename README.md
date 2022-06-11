@@ -2,6 +2,108 @@
 
 亲爱的读者们，欢迎大家对本书内容进行勘误，如您在本书中发现需要修改的地方，请通过提交Issue的方式告知我们，谢谢
 
+# 以下勘误问题存在于<印次：2022年6月第1次印刷>版本中。
+
+## 第四章
+
+## 第五章
+
+### 51页
+
+
+代码除需要修改
+
+```
+public void pass(User user){
+  user = new User();
+  user.setName("hollischuang");
+  System.out.println("print in pass , user is " + user);
+
+}
+
+
+```
+
+改为：
+
+```
+public void pass(User user){
+  user = new User();
+  user.setName("hollischuang");
+  user.setGender("Male");
+  System.out.println("print in pass , user is " + user);
+
+}
+
+```
+
+即，新增`user.setGender("Male");`
+
+
+### 51页
+
+图5-2中，最下面的灰色方框中，两个橙色方框的位置需要上下调换一下。
+
+## 第八章
+
+### 114
+
+倒数第四段，“所以，s3与s4的关系应该和s与s2的关系一样不相等才对”修改为”所以，s3与s4的关系应该和s1与s2的关系一样不相等才对“.
+
+
+## 第十章
+
+### 141页
+
+`String[] strings = String[] strings = {xxx}`中，String[] strings = 重复了，改为` String[] strings = {xxx}`
+
+### 159页
+
+最后一段代码中 list.stream().skip(strart).limit(end) 中的strart 改为 start 
+
+### 173页
+
+第三段文字中"remove方法源码如下。" 这句话多余，删除。
+
+在第四段文字前增加一句描述："通过查看前面我们贴出来的remove方法的源码我们可以发现，当index>elementCount时"，更方便理解。
+
+### 184页
+
+第二段代码第二行，int aHandredMillion = 10000000 改为 int aHandredMillion = 100000000；
+
+### 197页
+
+第二行， Stack Overflor 改为 Stack Overflow
+
+## 第十二章
+
+
+### 275页
+
+标题里面单词拼错了，应该为：Apache-Commons-Collections
+
+### 296页
+
+第一行，”这种形式定义不二类型的属性“，错别字“不二”应为”布尔“
+
+### 299页
+
+298和199页中，文字里面的json 双引号格式不统一，有的是中文引号，有的是英文引号。把299的{”success“:true}改为{"success":true}
+
+## 第十三章
+
+### 306页
+
+第一句文字，“所以，定先定义的枚举” 改为 “所以，先定义的枚举” 。
+
+## 第十六章
+
+### 348页
+
+第二行，”即使该注解没有使用@Retention“ 改为 ”即使该注解没有使用@Inherited“
+
+
+# 以下勘误问题存在于<印次：2022年5月第1次印刷>版本中。
 
 ## 第二章
 
@@ -69,9 +171,6 @@ https://github.com/hollischuang/In-depth-Understanding-Of-The-Core-Java/issues/2
 
 图10-1 ，interface和class的颜色标反了
 
-
-
-## 第十章
 
 ### 147页
 
