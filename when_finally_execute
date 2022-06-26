@@ -1,0 +1,57 @@
+我们知道，finally的代码一定会被执行，那么你知道他是在什么时间点执行的吗？如以下代码，get()的返回结果应该是多少？
+
+    public int get() {
+        int a = 1;
+        try {
+            return a + 1;
+        } finally {
+            a = 3;
+        }
+    }
+
+以上代码，方法get的返回结果为2，可以看到finally代码虽然会被执行，但是是在try中的return后面的表达式运算后执行的，所以函数返回值是在finally执行前就确定好了；
+
+如果在finally中也加一个return :
+
+    public int get() {
+        int a = 1;
+        try {
+            return a + 1;
+        } finally {
+            a = 3;
+            return a;
+        }
+    }
+
+以上代码，方法get的返回结果为3，这里finally中多个一个return语句，影响到了整个方法的返回结果。
+
+那么也就是说，但是如果finally中也有return 语句，那么整个方法的返回的结果就是finally中return 的值。
+
+那么，不知道大家会不会有这样的问题：如果在try/catch块中。JVM突然中断了（如使用了System.exit(0)），finally中的代码还会执行么？
+
+如以下代码：
+
+    public void print() {
+        try {
+            System.out.println("try");
+            System.exit(0);
+        } finally {
+            System.out.println("finally");
+        }
+    }
+    
+输出结果为：try
+
+finally的执行需要两个前提条件：1、对应 try 语句块被执行， 2、程序正常运行
+
+当使用System.exit(0);中断执行时，finally就不会再执行了。
+
+除了我们提到的这种System.exit(0);中断执行的情况，还有几种情况都会导致finally不会执行：
+
+1、System.exit()方法被执行
+2、Runtime.getRuntime().halt()方法被执行
+3、try或者catch中有死循环
+4、操作系统强制杀掉了JVM进程，如执行了kill -9
+5、其他原因导致的虚拟机崩溃了
+6、虚拟机所运行的环境挂了，如计算机电源断了
+7、finally块即将被后台线程(deamon)执行前，其他的所有非后台线程都已执行完了
