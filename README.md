@@ -52,6 +52,7 @@ public void pass(User user){
 
 ## 第九章
 
+整章调整为：https://github.com/hollischuang/In-depth-Understanding-Of-The-Core-Java/blob/main/when_finally_execute 
 
 ## 第十章
 
@@ -79,6 +80,9 @@ public void pass(User user){
 
 ## 第十二章
 
+### 259页
+
+"如果要序列化的类有父类.....那么父类也应该集成..."这里的"集成"改为"继承"
 
 ### 275页
 
